@@ -16,6 +16,10 @@
       href="feed/index.html"
     />
     <link
+      rel="icon"
+      src="/wojak_logo.png"
+    />
+    <link
       rel="alternate"
       type="application/rss+xml"
       title="Chinese Wojak &raquo; Comments Feed"
@@ -1228,7 +1232,128 @@
           </div>
         </div>
       </div>
+      
+      <!-- Image Gallery Section -->
+      <style>
+        .image-gallery-container {
+          padding: 60px 20px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        .gallery-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 20px;
+          margin-top: 40px;
+        }
+        .gallery-item {
+          position: relative;
+          overflow: hidden;
+          border-radius: 15px;
+          aspect-ratio: 1;
+          cursor: pointer;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+          transform: scale(1.05);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        .gallery-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+        @media (max-width: 768px) {
+          .gallery-grid {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+          }
+        }
+        @media (max-width: 480px) {
+          .gallery-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+      </style>
+      <div
+        class="elementor-element elementor-element-gallery-section e-flex e-con-boxed e-con e-parent"
+        data-id="gallery-section"
+        data-element_type="container"
+        id="gallery"
+      >
+        <div class="e-con-inner">
+          <div class="e-con-inner">
+            <div
+              class="elementor-element elementor-element-1001996 elementor-widget elementor-widget-heading"
+              data-id="1001996"
+              data-element_type="widget"
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  Chinese Wojak Memes
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="image-gallery-container">
+            <div
+              class="elementor-element elementor-element-gallery-title elementor-widget elementor-widget-heading"
+              data-id="gallery-title"
+              data-element_type="widget"
+              data-widget_type="heading.default"
+            >
 
+            </div>
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img
+                  src="/gallery/image1.png"
+                  alt="Gallery Image 1"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="/gallery/image2.png"
+                  alt="Gallery Image 2"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="/gallery/image3.png"
+                  alt="Gallery Image 3"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="/gallery/image4.png"
+                  alt="Gallery Image 4"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="/gallery/image5.png"
+                  alt="Gallery Image 5"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="/gallery/image6.png"
+                  alt="Gallery Image 6"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <div
         class="elementor-element elementor-element-fe935ce e-flex e-con-boxed e-con e-parent"
         data-id="fe935ce"
@@ -1255,8 +1380,8 @@
                 muted
                 loop
               >
-                <source src="/IMG_3081.MP4" type="video/mp4" />
-                <source src="/IMG_3081.MP4" type="video/ogg" />
+                <source src="/IMG_3082.MP4" type="video/mp4" />
+                <source src="/IMG_3082.MP4" type="video/ogg" />
                 Your browser does not support the video tag.
               </video>
             </div>
